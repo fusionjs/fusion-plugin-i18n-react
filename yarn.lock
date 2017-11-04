@@ -1651,6 +1651,16 @@ fusion-core@^0.1.8:
     koa-compose "^4.0.0"
     node-mocks-http "^1.6.6"
 
+fusion-plugin-i18n@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.1.8.tgz#1175dcd88a18f849e13a2c47b021e60c5810c858"
+  dependencies:
+    rollup "^0.49.2"
+
+fusion-react@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-0.1.8.tgz#fed6129ffe7745f2692a94ac513d80af30821e0b"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
@@ -2955,6 +2965,10 @@ rollup@^0.45.1:
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.45.2.tgz#63a284c2b31234656f24e9e9717fabb6a7f0fa43"
   dependencies:
     source-map-support "^0.4.0"
+
+rollup@^0.49.2:
+  version "0.49.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.49.3.tgz#4cce32643dd8cf2154c69ff0e43470067db0adbf"
 
 run-async@^2.2.0:
   version "2.3.0"
