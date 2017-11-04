@@ -3,10 +3,7 @@
   "version": "0.1.8",
   "description": "Adds I18n (Internationalization) support to a FusionJS app",
   "repository": "fusionjs/fusion-plugin-i18n-react",
-  "files": [
-    "dist",
-    "singleton.js"
-  ],
+  "files": ["dist", "singleton.js"],
   "main": "./dist/node.cjs.js",
   "module": "./dist/node.es.js",
   "browser": {
@@ -49,8 +46,10 @@
     "eslint-plugin-react": "^7.1.0",
     "fusion-core": "^0.1.8",
     "fusion-react": "^0.1.8",
+    "fusion-react-async": "0.1.4",
     "prettier": "1.4.2",
     "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "tape-cup": "^4.7.1",
     "unitest": "^1.0.0"
   },
