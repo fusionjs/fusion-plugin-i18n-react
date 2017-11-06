@@ -1651,9 +1651,9 @@ fusion-core@^0.1.8:
     koa-compose "^4.0.0"
     node-mocks-http "^1.6.6"
 
-fusion-plugin-i18n@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.1.8.tgz#1175dcd88a18f849e13a2c47b021e60c5810c858"
+fusion-plugin-i18n@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.1.9.tgz#aced058d2e67c5086c3f1835728b2c3b592d68ab"
   dependencies:
     rollup "^0.49.2"
 
