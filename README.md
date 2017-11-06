@@ -65,7 +65,7 @@ export default withTranslations(['test'])(({translate}) => {
 });
 ```
 
-### React component
+#### React component
 
 ```js
 import React from 'react';
