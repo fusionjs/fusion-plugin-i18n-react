@@ -37,8 +37,8 @@
     "prop-types": "^15.6.0"
   },
   "peerDependencies": {
-    "fusion-core": "^0.2.3",
-    "fusion-react": "^0.1.9",
+    "fusion-core": "^0.3.0-2",
+    "fusion-react": "^0.2.0",
     "react": "14.x - 16.x"
   },
   "devDependencies": {
