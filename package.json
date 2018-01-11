@@ -39,6 +39,7 @@
   "peerDependencies": {
     "fusion-core": "^0.3.0-2",
     "fusion-react": "^0.2.0",
+    "fusion-tokens": "0.0.4",
     "react": "14.x - 16.x"
   },
   "devDependencies": {
