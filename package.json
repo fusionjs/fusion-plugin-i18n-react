@@ -55,6 +55,7 @@
     "flow-bin": "^0.59.0",
     "fusion-core": "^0.3.0-2",
     "fusion-react": "^0.2.0",
+    "fusion-tokens": "0.0.4",
     "fusion-react-async": "0.1.4",
     "nyc": "^11.3.0",
     "prettier": "1.8.2",
