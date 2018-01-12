@@ -6,7 +6,7 @@ export {
   I18nToken,
   I18nLoaderToken,
   HydrationStateToken,
-  createI18nLoader
+  createI18nLoader,
 } from 'fusion-plugin-i18n';
 export {Translate} from './translate';
 export {withTranslations} from './with-translations';
