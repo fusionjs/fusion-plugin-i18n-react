@@ -2253,12 +2253,12 @@ fusion-core@0.3.0-2:
     node-mocks-http "^1.6.6"
     toposort "^1.0.6"
 
-fusion-plugin-i18n@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.2.2.tgz#c94b07674bf2db7a0c4d7a84c0a8c920e5246632"
+fusion-plugin-i18n@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.3.0.tgz#66586ab77d4da0138e87027f8d88df98ae15cc3e"
   dependencies:
     locale "^0.1.0"
-    rollup "^0.52.0"
+    rollup "^0.54.1"
 
 fusion-react-async@0.1.4:
   version "0.1.4"
@@ -4023,13 +4023,13 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup@^0.52.0:
-  version "0.52.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.52.3.tgz#020d99fffe9619351e47b3894fd397c26f5e1bf6"
-
 rollup@^0.53.2:
   version "0.53.4"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.53.4.tgz#f92ce56ee1d097ad5b6f13951bc80db5fef18113"
+
+rollup@^0.54.1:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.54.1.tgz#415a5d999421502646cf54b873fc4ce1a7393970"
 
 run-async@^2.2.0:
   version "2.3.0"
