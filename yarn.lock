@@ -2287,7 +2287,7 @@ fusion-core@0.3.0-5:
 
 fusion-plugin-i18n@^0.4.0:
   version "0.4.0"
-  resolved "https://unpm.uberinternal.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.4.0.tgz#0867802d17a8b9c6e8d379c15b4f9ae610fc5e55"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-0.4.0.tgz#0867802d17a8b9c6e8d379c15b4f9ae610fc5e55"
   dependencies:
     locale "^0.1.0"
     rollup "^0.54.1"
