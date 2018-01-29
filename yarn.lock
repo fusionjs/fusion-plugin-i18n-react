@@ -1918,9 +1918,9 @@ eslint-plugin-prettier@2.5.0:
     fast-diff "^1.1.1"
     jest-docblock "^21.0.0"
 
-eslint-plugin-react@7.6.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.6.0.tgz#351651188c74c5b2fecc2717e3936b7207baa728"
+eslint-plugin-react@7.6.1:
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.6.1.tgz#5d0e908be599f0c02fbf4eef0c7ed6f29dff7633"
   dependencies:
     doctrine "^2.0.2"
     has "^1.0.1"
@@ -2301,7 +2301,7 @@ fusion-react@0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-0.4.1.tgz#d411ebc389ae22e1bfd7e1058d66ac0d19b4d64a"
 
-fusion-test-utils@^0.4.0:
+fusion-test-utils@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/fusion-test-utils/-/fusion-test-utils-0.4.2.tgz#a8cc45eea3c6943cb41ba4b61f699adb126ef531"
   dependencies:
