@@ -180,14 +180,18 @@ import {I18nLoaderToken, HydrationStateToken} from 'fusion-plugin-i18n';
 import {FetchToken} from 'fusion-tokens';
 
 __NODE__ && app.register(I18nLoaderToken, I18nLoader);
-__BROWSER__ && app.register(HydrationStateToken, hydrationState);
 __BROWSER__ && app.register(FetchToken, fetch);
+
+// some-test.js
+__BROWSER__ && app.register(HydrationStateToken, hydrationState);
 ```
+
+##### Optional dependencies
 
 Name | Type | Default | Description
 -|-|-|-
 `I18nLoaderToken` | `{from: (ctx: Context) => ({locale: string, translations: Object<string, string>})}` | `createI18nLoader()` | A function that provides translations.  `ctx: {headers: {'accept-language': string}}` is a Koa context object.  Server-side only.
-`HydrationStateToken` | `{chunks: Array, translations: Object}` | `undefined` | Sets the hydrated state in the client.  Browser only.
+`HydrationStateToken` | `{chunks: Array, translations: Object}` | `undefined` | Sets the hydrated state in the client, and can be useful for testing purposes.  Browser only.
 `FetchToken` | `(url: string, options: Object) => Promise` | `window.fetch` | A [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation.  Browser-only.
 
 #### Factory
