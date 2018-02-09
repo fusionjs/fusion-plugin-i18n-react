@@ -2291,9 +2291,9 @@ fusion-plugin-i18n@^0.4.3:
     locale "^0.1.0"
     rollup "^0.55.1"
 
-fusion-react-async@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/fusion-react-async/-/fusion-react-async-0.1.4.tgz#f664a5bbe37aafd73e5b721586606940bda20398"
+fusion-react-async@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fusion-react-async/-/fusion-react-async-1.0.0.tgz#4753d0bbb8169cdb02d834257f2ae0a89112e85d"
   dependencies:
     prop-types "^15.5.8"
 
