@@ -37,7 +37,7 @@
   "peerDependencies": {
     "fusion-core": "^0.3.3",
     "fusion-react": "^0.4.1",
-    "fusion-tokens": "^0.0.6",
+    "fusion-tokens": "^1.0.0",
     "react": "14.x - 16.x"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
     "fusion-react": "0.4.2",
     "fusion-react-async": "0.1.4",
     "fusion-test-utils": "^0.4.2",
-    "fusion-tokens": "^0.0.6",
+    "fusion-tokens": "^1.0.0",
     "nyc": "11.4.1",
     "prettier": "1.10.2",
     "react": "16.2.0",
