@@ -2,7 +2,7 @@
 
 [![Build status](https://badge.buildkite.com/fd8fcdba7b74ed2e6dcbca1b5c4998797b400f536029c45483.svg?branch=master)](https://buildkite.com/uberopensource/fusion-plugin-i18n-react)
 
-Adds I18n (Internationalization) support to a FusionJS app.
+Adds I18n (Internationalization) support to a Fusion.js app.
 
 This plugin looks for translations in the `./translations` folder. Translations for each language are expected to be in a JSON file with a locale as a filename, for example, for US english, translations should be in `./translations/en-US.json`
 
@@ -32,7 +32,7 @@ import Hello from './hello';
 export default () => {
   const app = new App(<div></div>);
 
-  const I18n = app.register(I18nToken, I18n);
+  app.register(I18nToken, I18n);
   __NODE__
     ? app.register(I18nLoaderToken, createI18nLoader())
     : app.register(FetchToken, fetch);
@@ -176,25 +176,29 @@ Usage:
 #### Dependency registration
 
 ```js
-import I18n, {I18nToken, I18nLoaderToken} from 'fusion-plugin-i18n-react';
+import {I18nLoaderToken, HydrationStateToken} from 'fusion-plugin-i18n';
 import {FetchToken} from 'fusion-tokens';
 
-app.register(I18nToken, I18n);
-__NODE__
-  ? app.register(I18nLoaderToken, I18nLoader);
-  : app.register(FetchToken, fetch);
+__NODE__ && app.register(I18nLoaderToken, I18nLoader);
+__BROWSER__ && app.register(FetchToken, fetch);
+
+// some-test.js
+__BROWSER__ && app.register(HydrationStateToken, hydrationState);
 ```
 
-- `I18n` - the core I18n library
-- `I18nLoader: (ctx: Context) => ({locale: string, translations: Object<string, string>})` - A function that provides translations
-  - `ctx: FusionContext` - A [FusionJS context](https://github.com/fusionjs/fusion-core#context) object.
-- `fetch` - a [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation
+##### Optional dependencies
+
+Name | Type | Default | Description
+-|-|-|-
+`I18nLoaderToken` | `{from: (ctx: Context) => ({locale: string, translations: Object<string, string>})}` | `createI18nLoader()` | A function that provides translations.  `ctx: {headers: {'accept-language': string}}` is a Koa context object.  Server-side only.
+`HydrationStateToken` | `{chunks: Array, translations: Object}` | `undefined` | Sets the hydrated state in the client, and can be useful for testing purposes.  Browser only.
+`FetchToken` | `(url: string, options: Object) => Promise` | `window.fetch` | A [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation.  Browser-only.
 
 #### Factory
 
-`const i18n = I18n(ctx)`
+`const i18n = I18n.from(ctx)`
 
-- `ctx: FusionContext` - Required. A [FusionJS context](https://github.com/fusionjs/fusion-core#context) object.
+- `ctx: FusionContext` - Required. A [Fusion.js context](https://github.com/fusionjs/fusion-core#context) object.
 
 #### Instance methods
 
@@ -224,7 +228,7 @@ app.register(I18nLoaderToken, createI18nLoader());
 `const loader = createI18nLoader()`
 
 - `loader: (ctx) => ({locale, translations})` - A function that loads appropriate translations and locale information given an HTTP request context
-  - `ctx: FusionContext` - Required. A [FusionJS context](https://github.com/fusionjs/fusion-core#context) object.
+  - `ctx: FusionContext` - Required. A [Fusion.js context](https://github.com/fusionjs/fusion-core#context) object.
   - `locale: Locale` - A [Locale](https://www.npmjs.com/package/locale)
   - `translations: Object` - A object that maps translation keys to translated values for the given locale
 
