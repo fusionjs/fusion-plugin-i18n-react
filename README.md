@@ -97,6 +97,8 @@ Usage:
 <Translate id="Greeting" data={{name: user.name}} />
 ```
 
+---
+
 ### Setup
 
 ```js
