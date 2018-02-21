@@ -40,46 +40,7 @@ yarn add fusion-plugin-i18n-react
 
 ---
 
-### Example
-
-```js
-// src/main.js
-import React from 'react';
-import App from 'fusion-react';
-import I18n, {I18nToken, I18nLoaderToken, createI18nLoader} from 'fusion-plugin-i18n-react';
-import {FetchToken} from 'fusion-tokens';
-import fetch from 'unfetch';
-import Hello from './hello';
-
-export default () => {
-  const app = new App(<div></div>);
-
-  app.register(I18nToken, I18n);
-  __NODE__
-    ? app.register(I18nLoaderToken, createI18nLoader())
-    : app.register(FetchToken, fetch);
-
-  app.register(Hello);
-
-  return app;
-}
-
-// src/hello.js
-import {I18nToken} from 'fusion-plugin-i18n-react';
-
-export default createPlugin({
-  deps: {I18n: I18nToken},
-  middleware: ({I18n}) => (ctx, next) => {
-    // use the service
-    if (__NODE__ && ctx.path === '/hello') {
-      const i18n = I18n(ctx);
-      ctx.body = {
-        message: i18n.translate('test', {name: 'world'}), // hello world
-      }
-    }
-    return next();
-  }
-}
+### Usage
 
 #### React component
 
