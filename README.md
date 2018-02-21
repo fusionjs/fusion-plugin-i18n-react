@@ -135,7 +135,7 @@ import {I18nLoaderToken} from 'fusion-plugin-i18n-react';
 
 A function that provides translations.  Optional.  Server-side only.
 
-**Type**
+###### Types
 ```js
 type I18nLoader = {
   from: (ctx: Context) => ({locale: string, translations: Object})
@@ -146,7 +146,7 @@ type I18nLoader = {
   - `locale: Locale` - A [Locale](https://www.npmjs.com/package/locale)
   - `translations: Object` - A object that maps translation keys to translated values for the given locale
 
-**Default value**
+###### Default values
 
 If no loader is provided, the default loader will read translations from `./translations/{locale}.json`.  See [src/loader.js](https://github.com/fusionjs/fusion-plugin-i18n/blob/master/src/loader.js#L12) for more details.
 
@@ -158,7 +158,7 @@ import {HydrationStateToken} from 'fusion-plugin-i18n-react';
 
 Sets the hydrated state in the client, and can be useful for testing purposes.  Optional.  Browser only.
 
-**Type**
+###### Types
 ```js
 type HydrationState = {
   chunks: Array,
@@ -166,7 +166,7 @@ type HydrationState = {
 };
 ```
 
-**Default value**
+###### Default values
 
 If no hydration state is provided, this will be an empty object (`{}`) and have no effect.
 
@@ -178,7 +178,7 @@ import {FetchToken} from 'fusion-tokens';
 
 A [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation.  Browser-only.
 
-**Type**
+###### Types
 ```js
 type Fetch = (url: string, options: Object) => Promise<Response>;
 ```
@@ -187,7 +187,7 @@ type Fetch = (url: string, options: Object) => Promise<Response>;
 - `options: Object` - Optional.  You may optionally pass an `init` options object as the second argument.  See [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) for more details.
 - `[return]: Promise<Request>` - Return value from fetch.  See [Response](A function that loads appropriate translations and locale information given an HTTP request context) for more details.
 
-**Default value**
+###### Default values
 
 If no fetch implementation is provided, [`window.fetch`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) is used.
 
@@ -243,7 +243,7 @@ type WithTranslations = (translationKeys: Array<string>) => React.Component<Prop
 
 ### Other examples
 
-##### Custom translations loader example
+#### Custom translations loader example
 
 ```js
 // src/main.js
