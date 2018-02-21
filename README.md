@@ -184,6 +184,7 @@ type I18nLoader = {
   - `translations: Object` - A object that maps translation keys to translated values for the given locale
 
 **Default value**
+
 If no loader is provided, the default loader will read translations from `./translations/{locale}.json`.  See [src/loader.js](https://github.com/fusionjs/fusion-plugin-i18n/blob/master/src/loader.js#L12) for more details.
 
 ##### `HydrationStateToken`
@@ -203,6 +204,7 @@ type HydrationState = {
 ```
 
 **Default value**
+
 If no hydration state is provided, this will be an empty object (`{}`) and have no effect.
 
 ##### `FetchToken`
@@ -223,6 +225,7 @@ type Fetch = (url: string, options: Object) => Promise<Response>;
 - `[return]: Promise<Request>` - Return value from fetch.  See [Response](A function that loads appropriate translations and locale information given an HTTP request context) for more details.
 
 **Default value**
+
 If no fetch implementation is provided, [`window.fetch`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) is used.
 
 #### Service API
@@ -263,7 +266,6 @@ Be aware that the `withTranslations` function expects an array of string literal
 The original `Component` receives a prop called `{translate}`.
 
 **Types**
-
 ```js
 type TranslateProp = {
   translate: (key: string, interpolations: Object) => string
