@@ -67,8 +67,7 @@ test('plugin', async t => {
     };
   });
   const simulator = getSimulator(app);
-  // $FlowFixMe
   const ctx = await simulator.render('/');
-  t.ok(ctx.body.includes('hello'));
+  t.ok(typeof ctx.body === 'string' && ctx.body.includes('hello'));
   t.end();
 });
