@@ -6,7 +6,8 @@
  * @flow
  */
 
-import * as React from 'react';
+import React, {Component} from 'react';
+import type {ComponentType} from 'react';
 import PropTypes from 'prop-types';
 
 /*
@@ -20,8 +21,8 @@ in the app.
 The translation map is then exposed by `fusion-plugin-i18n/chunk-translation-map.js`
 */
 export const withTranslations = (/*translationKeys*/) => {
-  return (OriginalComponent: React.ComponentType<any>) => {
-    class WithTranslations extends React.Component<any> {
+  return (OriginalComponent: ComponentType<any>) => {
+    class WithTranslations extends Component<any> {
       translateProp: any;
 
       constructor(props: any, context: any) {
