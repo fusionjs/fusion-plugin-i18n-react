@@ -10,7 +10,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import type {Context} from 'fusion-core';
 
-type TranslateType = (key: string, interpolations?: {[string]: string | number}) => string;
+type TranslateType = (
+  key: string,
+  interpolations?: {[string]: string | number}
+) => string;
 
 /*
 The `withTranslations` HOC takes an array of translation keys as an argument,
@@ -26,15 +29,16 @@ export const withTranslations = (
 ) => {
   return <T: {}>(
     Component: React$ComponentType<T>
-  ): Class<React$Component<$Diff<T, {|translate?: TranslateType|}>, *>> => {
+  ): Class<React$Component<$Diff<T, {|translate?: TranslateType|}>>> => {
     class WithTranslations extends React.Component<T> {
       translate: TranslateType;
 
-      constructor(props: *, context: Context) {
+      constructor(props: T, context: Context) {
         super(props, context);
         const {i18n} = context;
         this.translate = i18n
-          ? (key: string, interpolations?: {[string]: string | number}) => i18n.translate(key, interpolations)
+          ? (key: string, interpolations?: {[string]: string | number}) =>
+              i18n.translate(key, interpolations)
           : (key: string) => key;
       }
 
