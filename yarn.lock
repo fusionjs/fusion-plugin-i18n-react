@@ -1953,9 +1953,9 @@ eslint-plugin-cup@2.0.0:
   dependencies:
     globals "^11.5.0"
 
-eslint-plugin-flowtype@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.0.0.tgz#4b72588d8a5a5c836439752fe52e8e0f4b9954df"
+eslint-plugin-flowtype@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.1.4.tgz#c6c9c514b8c01579e6621b51d83549d5db802cac"
   dependencies:
     lodash "^4.17.10"
 
@@ -1978,9 +1978,9 @@ eslint-plugin-jest@^21.24.1:
   version "21.24.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.24.1.tgz#aaf3c34e816f07add83d1e9c20696fdc31fac8dc"
 
-eslint-plugin-jest@^21.26.0:
-  version "21.26.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.26.0.tgz#3375de090cdd43af1971a4a93f5d332a13c10a6d"
+eslint-plugin-jest@^21.26.2:
+  version "21.26.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.26.2.tgz#5b24413970e83e2c5b87c5c047a08a4881783605"
 
 eslint-plugin-prettier@3.0.0:
   version "3.0.0"
@@ -2020,9 +2020,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.7.0.tgz#55c326d6fb2ad45fcbd0ce17c3846f025d1d819c"
+eslint@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.8.0.tgz#91fbf24f6e0471e8fdf681a4d9dd1b2c9f28309b"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
@@ -2293,9 +2293,9 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@^0.83.0:
-  version "0.83.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.83.0.tgz#fd26f5f95758d7701264b3f9a1e1a3d4cbcab1a9"
+flow-bin@^0.84.0:
+  version "0.84.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.84.0.tgz#4cb2364c750fb37a7840524fa62456b53f64cdcb"
 
 for-each@~0.3.3:
   version "0.3.3"
@@ -2359,9 +2359,9 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-fusion-core@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.8.0.tgz#286e8e2e2ebd253115cae97a70e5812e73f24901"
+fusion-core@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.9.0.tgz#a35436666c898de091aa259b295dc426df73e631"
   dependencies:
     koa "^2.5.3"
     koa-compose "^4.1.0"
@@ -2378,9 +2378,9 @@ fusion-plugin-i18n@^1.1.2:
     locale "^0.1.0"
     rollup "^0.66.2"
 
-fusion-react@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-1.3.1.tgz#da47dd055a035f05a0addf328de8261ffbad2902"
+fusion-react@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-1.3.2.tgz#bba342a63ffc11655d06d6bfc08cb88760752341"
   dependencies:
     prop-types "^15.6.2"
     react-is "^16.5.2"
@@ -4146,27 +4146,27 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.5.2:
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
+react-dom@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.0.tgz#6375b8391e019a632a89a0988bce85f0cc87a92f"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    schedule "^0.5.0"
+    scheduler "^0.10.0"
 
 react-is@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.5.2.tgz#e2a7b7c3f5d48062eb769fcb123505eb928722e3"
 
-react@^16.5.2:
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
+react@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.6.0.tgz#b34761cfaf3e30f5508bc732fb4736730b7da246"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    schedule "^0.5.0"
+    scheduler "^0.10.0"
 
 read-pkg-up@^2.0.0:
   version "2.0.0"
@@ -4431,10 +4431,11 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-schedule@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.5.0.tgz#c128fffa0b402488b08b55ae74bb9df55cc29cc8"
+scheduler@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.10.0.tgz#7988de90fe7edccc774ea175a783e69c40c521e1"
   dependencies:
+    loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
 "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1:
