@@ -14,10 +14,16 @@ import puppeteer from 'puppeteer';
 import {test} from 'fusion-test-utils';
 import {dev} from 'fusion-cli/test/run-command';
 
+// Create Mocks
+jest.mock('react', () => () => {
+  const React = require('react');
+  return {...React, Fragment: undefined};
+});
+
 test(
-  'able to do simple translations with React 15',
+  'able to do simple translations',
   async t => {
-    const dir = path.resolve(__dirname, '../../app-fixture');
+    const dir = path.resolve(__dirname, '../../../app-fixture');
     const {proc, port} = await dev(`--dir=${dir}`);
     const browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -42,7 +48,11 @@ test(
     await page.goto(`http://localhost:${port}/`, {waitUntil: 'load'});
     const content = await page.content();
 
-    t.ok(content.includes('hello world'));
+    // Wrapper <span>s
+    t.ok(
+      content.includes(`<div id="root"><div>hello world</span></div></div>`)
+    );
+
     await browser.close();
     proc.kill();
   },
