@@ -11,10 +11,7 @@ import {FetchToken} from 'fusion-tokens';
 import fetch from 'unfetch';
 import {Locale} from 'locale';
 
-import Plugin, {
-  I18nToken,
-  I18nLoaderToken,
-} from '../../src/index.js';
+import Plugin, {I18nToken, I18nLoaderToken} from '../../src/index.js';
 
 import Root from './root.js';
 
