@@ -26,6 +26,7 @@
     "lint": "eslint . --ignore-path .gitignore",
     "transpile": "npm run clean && cup build",
     "test": "fusion test",
+    "build-test": "rm -rf dist-tests && cup build-tests",
     "prepublish": "npm run transpile"
   },
   "dependencies": {
