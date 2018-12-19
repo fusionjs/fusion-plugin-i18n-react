@@ -48,7 +48,7 @@ export const withTranslations = (
     }
 
     const displayName = Component.displayName || Component.name;
-    WithTranslations.displayName = `withTranslations(${displayName})`;
+    WithTranslations.displayName = `withTranslations(${String(displayName)})`;
     WithTranslations.contextTypes = {
       i18n: PropTypes.object.isRequired,
     };
