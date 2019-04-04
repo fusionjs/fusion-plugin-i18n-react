@@ -3321,10 +3321,10 @@ fusion-core@^1.10.1:
     ua-parser-js "^0.7.19"
     uuid "^3.3.2"
 
-fusion-plugin-i18n@^1.2.1-0:
-  version "1.2.1-0"
-  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-1.2.1-0.tgz#64c05c6caa60ed3557afbfa3062138c6f7c1f45e"
-  integrity sha512-vECtUXL2rDv8deqnR2//V7+2XozODR+96b5kjouEy+MCPOvH3MvaGrq10FA6hpZMYrXXeZ47hkJBBFY+Y96tGg==
+fusion-plugin-i18n@^1.2.2-0:
+  version "1.2.2-0"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-i18n/-/fusion-plugin-i18n-1.2.2-0.tgz#0b11dfd9988ffb4551d5482ec2541fc512f048e3"
+  integrity sha512-RSP3kZ8VyVrOnQ9Uv7ACBqbSdccyBRgzmBST9yVZYo2y2SVHN0MqZSOYhxORSznvgHM49yBvIvBGiju+NS3wrA==
   dependencies:
     locale "^0.1.0"
     rollup "^0.67.3"
